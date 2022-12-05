@@ -1,6 +1,6 @@
 import { readFileSync } from "fs";
 
-const readFile = (fileName) => readFileSync(fileName).toString();
+const readFile = (fileName) => readFileSync(fileName).toString().trimEnd();
 
 export const getTestInput = () => readFile("testInput");
 
